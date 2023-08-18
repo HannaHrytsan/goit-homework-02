@@ -4,6 +4,7 @@
   --color-accent: #4d5ae5;
 }
 body {
+  color: #434455;
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -16,16 +17,23 @@ a {
   text-decoration: none;
 }
 /* Header */
-.header-logo {
+.accent {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.54px;
-  color: var(--color-primary);
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
-.header-logo .accent {
-  color: var(--color-accent);
+.logo-basic {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  color: #2e2f42;
 }
 
 .header-link {
@@ -33,14 +41,25 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.02;
   color: var(--color-primary);
+  a:hover {
+    color: #404bbf;
+  }
 }
 .contacts {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
+  letter-spacing: 0.02;
   color: var(--color-secondary);
+  a:hover {
+    color: #404bbf;
+  }
+  input:focus {
+    background-color: #404bbf;
+  }
 }
 /* Hero */
 .hero-section {
@@ -53,46 +72,71 @@ a {
   line-height: 1.07;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.02;
   color: #fff;
 }
 .hero-button {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5px;
+  line-height: 1.5;
+  letter-spacing: 0.04;
   text-align: center;
+  cursor: pointer;
   color: #fff;
-  background-color: var(--color-accent);
+   a:hover {
+    color: #404bbf;
+  }
+   input:focus {
+    background-color: #404bbf;
+  }
+  
+  }
+  
 }
 /* Strategy */
 .strategy-title {
+    font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
+   letter-spacing: 0.4;
+   color: #2e2f42;
 }
+
 .strategy-text {
+    font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
+  letter-spacing: 0.32;
   color: var(--color-secondary);
 }
+
+.team-section {
+    background-color: #F4F4FD
+}
+
 .team-title {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.111;
-  letter-spacing: 0.72px;
+  line-height: 1.11;
+   letter-spacing: 0.02;
+   color: #2e2f42;
+   text-align: center;
   text-transform: capitalize;
-  color: var(--color-primary);
+  
 }
 .team-name {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02;
   color: var(--color-primary);
 }
 .team-position {
@@ -100,19 +144,20 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.32px;
-  color: var(--color-secondary);
+ letter-spacing: 0.02;
+   color: #2e2f42;
 }
 /* Our Portfolio */
 .portfolio-title {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.111;
+  line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  color: var(--color-primary);
   text-align: center;
+  color: var(--color-primary);
+  
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .name-of-services {
@@ -128,6 +173,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
+  letter-spacing: 0.02;
   color: var(--color-secondary);
 }
 /* Footer */
@@ -142,10 +188,10 @@ a {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: #4d5ae5;
 }
 .footer-logo .accent {
   font-family: "Raleway", sans-serif;
@@ -155,7 +201,7 @@ a {
   line-height: 1.16;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: #f4f4fd;
 }
 .benefits {
   font-family: Roboto;
